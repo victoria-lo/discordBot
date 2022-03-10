@@ -1,10 +1,12 @@
-require('dotenv').config();
-const Discord = require('discord.js');
+require("dotenv").config();
 const axios = require('axios');
-const client = new Discord.Client();
+const { Client, Intents } = require("discord.js");
+const client = new Client({
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+});
 
 let interval;
-client.on('message', async msg => {
+client.on('messageCreate', async msg => {
   switch (msg.content) {
     case "ping":
       msg.reply("Pong!");
