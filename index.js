@@ -36,4 +36,5 @@ async function getMeme(){
 
 
 //must be last line
-client.login("TokenLine");
+client.login("TokenLine"); //필요시 Vs에디터등에서 토큰입력하고 작성
+                           //실행 후 다시 지우는 거 잊지말 것!
