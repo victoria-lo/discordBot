@@ -26,7 +26,7 @@ client.on('message', async msg => {
 });
 
 //must be last line
-client.login(token); //config.json에 격리
+client.login(token); //config.json에 격리.
 																						  //해당파일은 따로 만들어줘야함
 /* example . vscord 등으로 생성															  //후에 환경변수를 사용한 dotenv도 사용고려
 { 
