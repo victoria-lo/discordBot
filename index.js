@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const axios = require('axios');
 const client = new Discord.Client();
 
 let interval;
@@ -23,5 +22,5 @@ client.on('message', async msg => {
 });
 
 //must be last line
-client.login("TokenLine"); //필요시 Vs에디터등에서 토큰입력하고 작성
+client.login("MTEwOTc1NTEzMTYzOTEwMzUwOA.G375sv.FFxRQOhXFoKFPpIbgqwMTfTqV8gg2JYcIsO__M"); //필요시 Vs에디터등에서 토큰입력하고 작성
                            //실행 후 다시 지우는 거 잊지말 것!
