@@ -26,5 +26,10 @@ client.on('message', async msg => {
 });
 
 //must be last line
-client.login("MTEwOTc1NTEzMTYzOTEwMzUwOA.G375sv.FFxRQOhXFoKFPpIbgqwMTfTqV8gg2JYcIsO__M"); //필요시 Vs에디터등에서 토큰입력하고 작성
-                           //실행 후 다시 지우는 거 잊지말 것!
+client.login(token); //config.json에 격리
+																						  //해당파일은 따로 만들어줘야함
+/* example . vscord 등으로 생성															  //후에 환경변수를 사용한 dotenv도 사용고려
+{ 
+	"token": "토큰"
+}
+*/
