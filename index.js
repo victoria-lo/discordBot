@@ -36,4 +36,4 @@ async function getMeme(){
 
 
 //must be last line
-client.login("MTEwOTc1NTEzMTYzOTEwMzUwOA.GZwdOd.d-jVPUp4TCDkaEKXMNVfzofTXA4YCOhC15RAew");
+client.login("TokenLine");
