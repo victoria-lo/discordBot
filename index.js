@@ -1,10 +1,11 @@
-const Discord = require('discord.js');
-const client = new Discord.Client({ intents: [
-                                              Discord.GatewayIntentBits.Guilds,
-                                              Discord.GatewayIntentBits.GuildMessages
-                                            ]})
+const { Client, Events, GatewayIntentBits } = require('discord.js');
+const { token } = require('./config.json');
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-let interval;
+client.once(Events.ClientReady, c => {
+	console.log(`Ready! Logged in as ${c.user.tag}`);
+});
+
 client.on('message', async msg => {
   switch (msg.content) {
     case "ping":
